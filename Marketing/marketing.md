@@ -307,4 +307,88 @@ Cho phép định nghĩa **các từ đồng nghĩa** để mở rộng khả n�
 ### ⚠️ Lưu ý  
 - Synonym chỉ hoạt động nếu search engine là **Elasticsearch**.  
 - Nhớ reindex và clear cache để cập nhật.  
-- Tránh đặt synonym không liên quan gây nhi
+- Tránh đặt synonym không liên quan gây nhi kết quả.
+
+---
+
+### 📘 Site Map
+
+### ✅ Tác dụng  
+Tạo sitemap.xml cho công cụ tìm kiếm như Google để crawl website dễ dàng hơn.
+
+### 🔧 Ví dụ minh họa  
+Sitemap tại: `https://yourdomain.com/sitemap.xml` chứa link tới tất cả sản phẩm, danh mục, CMS pages.
+
+### ▶️ Cách sử dụng  
+- Admin: `Marketing > SEO & Search > Site Map`  
+- Chọn path lưu sitemap, định kỳ regenerate bằng cron.
+
+### ⚙️ Cách hoạt động  
+- Magento sinh file `.xml` chứa đường dẫn cần index.  
+- Có thể submit sitemap lên Google Search Console.
+
+### 🏷 Các thuộc tính cần chú ý
+
+| Thuộc tính       | Giải thích |
+|------------------|------------|
+| `Path`           | Đường dẫn lưu file sitemap |
+| `Store View`     | Tạo sitemap theo từng store |
+| `Last Generated` | Thời gian cập nhật gần nhất |
+
+### ⚠️ Lưu ý  
+- File sitemap nên có quyền đọc công khai (`644`).  
+- Đường dẫn không nên chứa `/pub/`.  
+- Kiểm tra lại nếu site không index lên Google.
+
+---
+
+## 🧑‍💬 User Content
+
+---
+
+### 📘 All Reviews
+
+### ✅ Tác dụng  
+Quản lý toàn bộ đánh giá sản phẩm do khách hàng gửi từ frontend.
+
+### 🔧 Ví dụ minh họa  
+Khách A đánh giá 4★ cho sản phẩm "Áo Polo X", admin có thể duyệt, chỉnh sửa hoặc ẩn.
+
+### ▶️ Cách sử dụng  
+- Admin: `Marketing > User Content > All Reviews`
+
+### ⚙️ Cách hoạt động  
+- Khi khách đánh giá, review sẽ ở trạng thái “Pending”.  
+- Admin duyệt → review hiển thị ngoài frontend.
+
+### 🏷 Các thuộc tính cần chú ý
+
+| Thuộc tính        | Giải thích |
+|-------------------|------------|
+| `Title`           | Tiêu đề review |
+| `Detail`          | Nội dung chi tiết |
+| `Rating`          | Số sao (1-5) |
+| `Nickname`        | Tên hiển thị |
+| `Status`          | Pending / Approved / Not Approved |
+| `Product`         | Sản phẩm được đánh giá |
+
+### ⚠️ Lưu ý  
+- Nếu review không hiển thị, hãy kiểm tra trạng thái hoặc cấu hình `Stores > Configuration > Catalog > Catalog > Product Reviews`.
+
+---
+
+### 📘 Pending Reviews
+
+### ✅ Tác dụng  
+Hiển thị các đánh giá đang chờ duyệt.
+
+### ▶️ Cách sử dụng  
+- Admin: `Marketing > User Content > Pending Reviews`  
+- Tại đây admin có thể phê duyệt, chỉnh sửa hoặc xóa.
+
+### ⚠️ Lưu ý  
+- Nên kiểm duyệt thường xuyên để không làm khách thất vọng vì review không xuất hiện.  
+- Có thể cấu hình để review được tự động duyệt nếu muốn.
+
+---
+

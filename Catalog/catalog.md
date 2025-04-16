@@ -44,6 +44,12 @@ Sản phẩm "Áo Thun Nam Cổ Tròn" giá 299.000đ, màu sắc có thể ch�
 | **Grouped**         | Gộp nhiều sản phẩm đơn |
 | **Bundle**          | Bộ sản phẩm, khách chọn từng phần |
 
+| **Bundle**   
+| Loại giá	| Mô tả |
+|------|----------------------|
+| Dynamic Price	| Giá của sản phẩm được tính dựa trên tổng giá của các item con bên trong.
+| Fixed Price	| Giá cố định được đặt tại bundle, không phụ thuộc giá item con.
+
 ### 📁 Đường dẫn  
 - Admin: `Catalog > Products`  
 - Code: `catalog_product_entity`, `cataloginventory_stock_item`, `eav_attribute`...

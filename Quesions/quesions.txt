@@ -1,0 +1,125 @@
+Magento 2 - Câu Hỏi Lý Thuyết Cơ Bản
+
+Dưới đây là danh sách câu hỏi trắc nghiệm lý thuyết và đáp án dành cho người mới bắt đầu học Magento 2.
+
+1. Magento 2 sử dụng mô hình kiến trúc nào?
+
+A. MVCB. MVVMC. HMVCD. MVP✅ Đáp án: A. MVC
+
+2. Trong Magento 2, khái niệm "Module" dùng để làm gì?
+
+A. Lưu trữ hình ảnhB. Quản lý themeC. Thêm tính năng mới cho hệ thốngD. Tăng tốc độ website✅ Đáp án: C. Thêm tính năng mới cho hệ thống
+
+3. File nào dùng để khai báo module trong Magento 2?
+
+A. module.xmlB. di.xmlC. app.phpD. config.php✅ Đáp án: A. module.xml
+
+4. Lệnh CLI nào để bật một module trong Magento 2?
+
+A. bin/magento module:enableB. bin/magento module:startC. bin/magento module:runD. bin/magento enable:module✅ Đáp án: A. bin/magento module:enable
+
+5. Theme trong Magento 2 được lưu trữ ở đâu?
+
+A. app/code/Theme/B. app/design/frontend/C. pub/static/themes/D. vendor/magento/themes/✅ Đáp án: B. app/design/frontend/
+
+6. Block trong Magento 2 dùng để làm gì?
+
+A. Giao tiếp giữa Controller và TemplateB. Hiển thị HTML trực tiếpC. Chứa CSS của moduleD. Tạo bảng trong cơ sở dữ liệu✅ Đáp án: A. Giao tiếp giữa Controller và Template
+
+7. Lệnh nào dùng để dọn cache trong Magento 2?
+
+A. bin/magento cache:flushB. bin/magento clear:cacheC. bin/magento cache:clearallD. bin/magento reset:cache✅ Đáp án: A. bin/magento cache:flush
+
+(Đang tiếp tục... Bạn muốn thêm bao nhiêu câu nữa?)
+
+
+Câu hỏi 1: Catalog trong Magento 2 là gì và có vai trò gì trong hệ thống?
+Câu trả lời:
+Catalog trong Magento 2 là một tập hợp các sản phẩm và danh mục sản phẩm (categories) được quản lý trong hệ thống. Nó có vai trò lưu trữ thông tin về các sản phẩm, bao gồm các thuộc tính, giá cả, tình trạng tồn kho, và các thông tin liên quan đến sản phẩm.
+
+Giải thích:
+Catalog giúp phân loại và tổ chức sản phẩm một cách dễ dàng, từ đó giúp khách hàng tìm kiếm và mua sắm sản phẩm một cách hiệu quả hơn.
+
+Câu hỏi 2: Những loại sản phẩm nào Magento 2 hỗ trợ trong catalog? (VD: Simple, Configurable...)
+Câu trả lời:
+Magento 2 hỗ trợ nhiều loại sản phẩm khác nhau trong catalog, bao gồm:
+
+Simple Product: Sản phẩm đơn giản, không có sự lựa chọn nào (VD: một chiếc áo sơ mi).
+
+Configurable Product: Sản phẩm có nhiều biến thể như màu sắc, kích thước (VD: một chiếc áo với các màu sắc và kích thước khác nhau).
+
+Virtual Product: Sản phẩm không có hàng hóa vật lý (VD: khóa học trực tuyến).
+
+Bundle Product: Sản phẩm được tạo thành từ nhiều sản phẩm khác nhau mà khách hàng có thể chọn lựa (VD: gói máy tính bao gồm màn hình, bàn phím, chuột...).
+
+Grouped Product: Sản phẩm nhóm chứa nhiều sản phẩm đơn giản mà khách hàng có thể mua cùng nhau (VD: một bộ đồ chơi với nhiều món nhỏ bên trong).
+
+Câu hỏi 3: Sự khác nhau giữa sản phẩm Simple và sản phẩm Configurable là gì?
+Câu trả lời:
+
+Simple Product: Là sản phẩm đơn lẻ với chỉ một tùy chọn duy nhất, không có sự thay đổi về kích thước hay màu sắc.
+
+Configurable Product: Là sản phẩm có nhiều tùy chọn (VD: màu sắc, kích thước), nơi khách hàng có thể chọn một trong các biến thể đã được định nghĩa trước.
+
+Giải thích:
+Configurable Product cho phép quản trị viên tạo các lựa chọn sản phẩm với các biến thể khác nhau. Ví dụ, một chiếc áo có thể có các kích thước (S, M, L) và màu sắc (Đỏ, Xanh, Đen). Khách hàng có thể lựa chọn một trong những biến thể này khi mua hàng.
+
+Câu hỏi 4: Bundle Product và Grouped Product khác nhau như thế nào?
+Câu trả lời:
+
+Bundle Product: Là sản phẩm được tạo thành từ nhiều sản phẩm khác nhau mà khách hàng có thể chọn lựa các thành phần riêng biệt. Các thành phần này có thể có nhiều lựa chọn khác nhau.
+
+Grouped Product: Là một nhóm các sản phẩm đơn giản mà khách hàng có thể mua cùng nhau trong một đơn hàng.
+
+Giải thích:
+
+Trong Bundle Product, khách hàng có thể chọn sản phẩm nào họ muốn và có thể có sự thay đổi về số lượng hoặc thuộc tính của từng sản phẩm.
+
+Grouped Product thường là các sản phẩm có sẵn và khách hàng chỉ có thể thêm vào giỏ hàng mà không cần chọn thêm bất kỳ thuộc tính nào.
+
+Câu hỏi 5: Product Attribute trong Magento là gì? Có thể dùng để làm gì?
+Câu trả lời:
+Product Attribute là các thuộc tính được gắn vào sản phẩm, giúp mô tả các đặc tính của sản phẩm như màu sắc, kích thước, trọng lượng, v.v.
+
+Giải thích:
+Product Attribute giúp phân loại và tìm kiếm sản phẩm dễ dàng hơn. Ví dụ, thuộc tính "Màu sắc" có thể giúp khách hàng lọc sản phẩm theo màu khi tìm kiếm trên trang web.
+
+Câu hỏi 6: Product Attribute Set là gì và tại sao cần sử dụng nó?
+Câu trả lời:
+Product Attribute Set là một nhóm các thuộc tính sản phẩm được định nghĩa trước. Mỗi loại sản phẩm có thể sử dụng một Attribute Set riêng biệt để xác định những thuộc tính nào sẽ được áp dụng.
+
+Giải thích:
+Khi tạo một sản phẩm mới trong Magento 2, bạn cần chọn một Attribute Set để xác định các thuộc tính sản phẩm. Việc sử dụng Attribute Set giúp bạn dễ dàng tạo và quản lý các loại sản phẩm khác nhau (VD: áo, giày, phụ kiện) với các thuộc tính riêng biệt.
+
+Câu hỏi 7: Làm thế nào để tạo một Attribute mới cho sản phẩm?
+Câu trả lời:
+Để tạo một Attribute mới, bạn vào Stores > Attributes > Product trong Admin Panel và chọn Add New Attribute. Sau đó, điền thông tin cần thiết như tên, loại, thuộc tính cho phép lọc, v.v.
+
+Giải thích:
+Khi tạo một Attribute mới, bạn cần xác định loại dữ liệu (text, số, ngày tháng, v.v.), cách hiển thị và các tùy chọn để sử dụng trên trang sản phẩm và trong các bộ lọc.
+
+Câu hỏi 8: Những thuộc tính nào là bắt buộc khi tạo một sản phẩm mới?
+Câu trả lời:
+Các thuộc tính bắt buộc bao gồm Tên sản phẩm, Giá, SKU (mã sản phẩm), Trạng thái (Enabled/Disabled), Danh mục (Category) và Mô tả sản phẩm.
+
+Giải thích:
+Những thuộc tính này là cần thiết để hệ thống có thể quản lý và hiển thị sản phẩm đúng cách. Các thông tin này giúp hệ thống nhận diện sản phẩm, hiển thị sản phẩm trên website, và cho phép khách hàng thực hiện các thao tác mua hàng.
+
+Câu hỏi 9: Magento xử lý hình ảnh sản phẩm như thế nào trong phần catalog?
+Câu trả lời:
+Magento 2 xử lý hình ảnh sản phẩm thông qua các tính năng như Thumbnail, Base Image, và Small Image. Các hình ảnh này có thể được tải lên khi tạo sản phẩm và sau đó được hiển thị trên các trang sản phẩm.
+
+Giải thích:
+
+Base Image là hình ảnh chính của sản phẩm, hiển thị trên trang chi tiết.
+
+Thumbnail Image là hình ảnh nhỏ, hiển thị trong danh sách sản phẩm.
+
+Small Image là hình ảnh nhỏ hơn nữa, hiển thị trong giỏ hàng hoặc trong kết quả tìm kiếm.
+
+Câu hỏi 10: Mối quan hệ giữa Category và Product là gì? Một sản phẩm có thể thuộc nhiều category không?
+Câu trả lời:
+Category trong Magento là cách để nhóm các sản phẩm lại với nhau. Một sản phẩm có thể thuộc nhiều category khác nhau, giúp khách hàng tìm kiếm dễ dàng hơn.
+
+Giải thích:
+Việc phân loại sản phẩm theo các category giúp trang web dễ dàng quản lý và hiển thị các nhóm sản phẩm theo từng chủ đề (VD: "Giày thể thao", "Áo sơ mi"). Một sản phẩm có thể xuất hiện trong nhiều category tùy thuộc vào chiến lược phân loại của cửa hàng.
